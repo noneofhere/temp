@@ -1,4 +1,4 @@
-
+<?php
 /*
 PHP open_basedir bypass collection
 Works with >= PHP5
